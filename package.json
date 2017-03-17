@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "name": "slides-feel-good-with-brunch",
+  "description": "Slides for my talk about Brunch",
+  "author": "Denys Dovhan <email@denysdovhan.com> (http://denysdovhan.com)",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denysdovhan/slides-feel-good-with-brunch.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "lint": "eslint",
+    "start": "brunch watch --server",
+    "build": "brunch build --production",
+    "deploy": "npm run clean && npm run lint && npm run build"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "spectacle": "^1"
+  },
+  "devDependencies": {
+    "auto-reload-brunch": "^2",
+    "babel-brunch": "~6.0",
+    "babel-preset-latest": "^6",
+    "babel-preset-react": "~6.22",
+    "brunch": "^2",
+    "clean-css-brunch": "^2",
+    "jade-brunch": "^2.8.0",
+    "raw-brunch": "^1.0.0",
+    "uglify-js-brunch": "^2"
+  }
+}
