@@ -8,7 +8,7 @@ before_script:
 - git remote rm origin
 - git remote add origin https://denysdovhan:${GH_TOKEN}@github.com/denysdovhan/slides-feel-good-with-brunch.git
 script:
-- [ "${TRAVIS_PULL_REQUEST}" = "false" ] && npm run deploy || npm run build
+- '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && npm run deploy || npm run build'
 env:
   global:
     secure: alsA9p1yBMSVn7kZ/01PapVfq33JuEjBlZz5EHTmNzrr2aGlTQxNfSQBUQl/4w9CywvsogGcLxxtxbSC3eBoRbDGToohy0LJr7sJfYqjnkR4lliZxzfxnU5CX+c0oM0NEa1RQWcp+I5uUcYniBK33vDJpJe8h16beMZYv5JNFu0UVBslw56Wo6j0W0slihuHEu0DUy3eJBPyMSnYf4j4NBecVXeP44BtdB5ULfj2BjL9XDYuJaLPhwlPLvGK6WHMkCLCy8eYAJTDsHiFhOygr8s0ykf6ccXzbVKD4gjhONDnK+tUGD5YeyoLYOavMTlGpONVIrDmuemk8iFcnXPcE/hznohpLgfYwnay5MbDUdoktrM7yks7eZe5joBHrP+JNYt8tXOBC5aFiDuyDXPP81ESy0hrJVa8ryV+DeJakmaHYebMYdOkanlFLL3GMSCV89nmi5ArBN50fnBc2cGO2bmblT1CyJFhbeurC/32YL7gOrEdMkKn6A3EpTECg+05vlNp7zIiOsB83SyYES1qEc3oB88jlWilzrrN+zg4AFKwny2yEHDp5gySYgK/ykMNsqyxrSg01DCBfRMMQYaSe9NIcxZiD4Ze4SVl3LVdXsWdqvcT0Ct5XbI7RtQarn7JJC4r4UJR/39jgg1nuiKwCKTU5hpWV6BCDDVbGg5Wukc=
