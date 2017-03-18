@@ -28,6 +28,7 @@
     "babel-preset-react": "~6.22",
     "brunch": "^2",
     "clean-css-brunch": "^2",
+    "gh-pages": "^0.12.0",
     "jade-brunch": "^2.8.0",
     "raw-brunch": "^1.0.0",
     "uglify-js-brunch": "^2"
