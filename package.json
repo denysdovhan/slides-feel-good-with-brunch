@@ -11,9 +11,9 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist",
-    "lint": "eslint",
+    "lint": "eslint *.js",
     "start": "brunch watch --server",
-    "build": "brunch build --production",
+    "build": "npm run lint && brunch build --production",
     "deploy": "npm run build && gh-pages -d dist -m \"Updated at $(date +'%a, %d %b %Y, %T, %Z')\" --add"
   },
   "dependencies": {
@@ -28,6 +28,11 @@
     "babel-preset-react": "~6.22",
     "brunch": "^2",
     "clean-css-brunch": "^2",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
     "gh-pages": "^0.12.0",
     "jade-brunch": "^2.8.0",
     "raw-brunch": "^1.0.0",

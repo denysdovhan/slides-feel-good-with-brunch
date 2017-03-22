@@ -3,30 +3,30 @@ module.exports = {
     javascripts: {
       joinTo: {
         'vendor.js': /^(?!app)/,
-        'app.js': /^app/
-      }
+        'app.js': /^app/,
+      },
     },
     stylesheets: {
-      joinTo: 'app.css'
+      joinTo: 'app.css',
     },
     templates: {
-      joinTo: 'templates.js'
-    }
+      joinTo: 'templates.js',
+    },
   },
 
   paths: {
-    public: 'dist'
+    public: 'dist',
   },
 
   npm: {
     styles: {
-      spectacle: ['lib/themes/default/index.css']
-    }
+      spectacle: ['lib/themes/default/index.css'],
+    },
   },
 
   modules: {
     autoRequire: {
-      'app.js': ['index.js']
-    }
-  }
-}
+      'app.js': ['index.js'],
+    },
+  },
+};
