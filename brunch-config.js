@@ -10,7 +10,7 @@ module.exports = {
       joinTo: 'app.css',
     },
     templates: {
-      joinTo: 'templates.js',
+      joinTo: 'app.js',
     },
   },
 
