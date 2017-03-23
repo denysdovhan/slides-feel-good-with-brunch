@@ -1,0 +1,9 @@
+hooks: {
+  preCompile() {
+    // ..
+  },
+  onCompile(generatedFiles, changedAssets) {
+    // ...
+    return Promise.resolve();
+  },
+},

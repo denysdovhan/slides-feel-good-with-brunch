@@ -1,0 +1,9 @@
+module.exports = {
+  javascripts: {
+    joinTo: {
+      'vendors.js': /^(?!app)/,
+      'app.js': /^app/,
+    },
+  },
+  stylesheets: { joinTo: 'app.css' },
+};
