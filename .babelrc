@@ -2,5 +2,8 @@
   "presets": [
     "latest",
     "react"
+  ],
+  "plugins": [
+    "syntax-object-rest-spread"
   ]
 }
